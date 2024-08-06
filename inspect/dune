@@ -1,0 +1,4 @@
+(executable
+  (name main)
+  (libraries tptp)
+  (public_name inspect-tptp))

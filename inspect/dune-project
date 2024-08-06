@@ -1,0 +1,6 @@
+(lang dune 3.7)
+(package (name inspect-tptp)
+(depends
+ (ocaml (>= 4.08))
+ (dune (>= 2.0))
+ (tptp (>= 0.3.2))))

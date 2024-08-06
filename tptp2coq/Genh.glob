@@ -1,0 +1,693 @@
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var
+DIGEST 3ae53f48c40a9bd8343197481c96e254
+FGenh
+R44:49 Coq.Setoids.Setoid <> <> lib
+R79:84 Hammer.Plugin.Hammer <> <> lib
+ax 111:111 <> G
+ax 130:130 <> e
+R134:134 Genh <> G defax
+ax 147:147 <> f
+R152:155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:151 Genh <> G defax
+R157:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R156:156 Genh <> G defax
+R161:161 Genh <> G defax
+ax 174:174 <> i
+R179:182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R178:178 Genh <> G defax
+R183:183 Genh <> G defax
+ax 192:204 <> associativity
+R223:223 Genh <> G defax
+binder 215:215 <> X:5
+binder 217:217 <> Y:6
+binder 219:219 <> Z:7
+R226:226 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R238:242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R254:254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R227:227 Genh <> f defax
+R230:230 Genh <> f defax
+R232:232 Genh <> X:5 var
+R234:234 Genh <> Y:6 var
+R237:237 Genh <> Z:7 var
+R243:243 Genh <> f defax
+R245:245 Genh <> X:5 var
+R248:248 Genh <> f defax
+R250:250 Genh <> Y:6 var
+R252:252 Genh <> Z:7 var
+ax 263:275 <> right_inverse
+R290:290 Genh <> G defax
+binder 286:286 <> X:9
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R303:306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R294:294 Genh <> f defax
+R296:296 Genh <> X:9 var
+R299:299 Genh <> i defax
+R301:301 Genh <> X:9 var
+R307:307 Genh <> e defax
+ax 316:325 <> right_unit
+R340:340 Genh <> G defax
+binder 336:336 <> X:11
+R343:343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R349:352 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R344:344 Genh <> f defax
+R346:346 Genh <> X:11 var
+R348:348 Genh <> e defax
+R353:353 Genh <> X:11 var
+prf 377:381 <> check
+R396:396 Genh <> G defax
+binder 392:392 <> X:13
+R399:399 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R405:408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R400:400 Genh <> f defax
+R402:402 Genh <> e defax
+R404:404 Genh <> X:13 var
+R409:409 Genh <> X:13 var

@@ -1,0 +1,5 @@
+(executable
+ (public_name tptp2coqp)
+ (name main)
+ (libraries tptp2coqp tptp)
+ (flags -thread -w -8-20-26-27-32-37-41-42-44-45-48))
