@@ -76,6 +76,11 @@ let is_axiom = function
 | Cnf_anno af ->
   begin match af.af_role with
   | R_axiom -> true
+  | R_hypothesis -> true
+  | R_definition -> true
+  | R_assumption -> true
+  | R_lemma -> true (* TODO: is this ok? *)
+  | R_theorem -> true (* TODO: is this ok? *)
   | _ -> false
   end
 | _ -> false
@@ -137,7 +142,12 @@ let find_problem inputs =
     begin match h with
     | Cnf_anno af ->
       begin match af.af_role with
-      | R_axiom -> aux t
+      | R_axiom
+      | R_hypothesis
+      | R_definition
+      | R_assumption
+      | R_lemma
+      | R_theorem -> aux t
       | _ -> af.af_formula
       end
     | _ -> aux t

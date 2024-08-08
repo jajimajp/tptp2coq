@@ -3,6 +3,8 @@ Require Import SMTCoq.SMTCoq ZArith.
 Local Open Scope Z_scope.
 
 (* axioms *)
+Variable a : Z.
+Variable b : Z.
 Variable equalish : Z -> Z -> Z.
 Variable identity : Z.
 Variable ifeq : Z -> Z -> Z -> Z -> Z.
@@ -10,6 +12,7 @@ Variable inverse : Z -> Z.
 Variable multiply : Z -> Z -> Z.
 Variable product : Z -> Z -> Z -> Z.
 Variable true : Z.
+Axiom a_equals_b : (equalish a b) = true.
 Axiom product_substitution3 : forall W X Y Z : Z, (ifeq (equalish X Y) true (ifeq (product W Z X) true (product W Z Y) true) true) = true.
 Axiom associativity2 : forall U V W X Y Z : Z, (ifeq (product Y Z V) true (ifeq (product X V W) true (ifeq (product X Y U) true (product U Z W) true) true) true) = true.
 Axiom associativity1 : forall U V W X Y Z : Z, (ifeq (product U Z W) true (ifeq (product Y Z V) true (ifeq (product X Y U) true (product X V W) true) true) true) = true.
@@ -19,10 +22,10 @@ Axiom left_inverse : forall X : Z, (product (inverse X) X identity) = true.
 Axiom left_identity : forall X : Z, (product identity X X) = true.
 Axiom ifeq_axiom : forall A B C : Z, (ifeq A A B C) = B.
 
-Add_lemmas product_substitution3 associativity2 associativity1 total_function2 total_function1 left_inverse left_identity ifeq_axiom.
+Add_lemmas a_equals_b product_substitution3 associativity2 associativity1 total_function2 total_function1 left_inverse left_identity ifeq_axiom.
 
 (* Goal *)
-Theorem check : (equalish a b) = true.
+Theorem check : (equalish (inverse a) (inverse b)) = true.
 Proof.
   smt.
 Qed.

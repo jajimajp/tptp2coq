@@ -4,18 +4,21 @@ From Completion Require Import Plugin.
 
 (* axioms *)
 Parameter G : Set.
+Parameter b : G.
+Parameter c : G.
 Parameter identity : G.
 Parameter inverse : G -> G.
 Parameter multiply : G -> G -> G.
+Axiom c_times_b_is_e : (multiply c b) = identity.
 Axiom left_inverse : forall X : G, (multiply (inverse X) X) = identity.
 Axiom left_identity : forall X : G, (multiply identity X) = X.
 Axiom associativity : forall X Y Z : G, (multiply (multiply X Y) Z) = (multiply X (multiply Y Z)).
 
-Complete left_inverse left_identity associativity : identity inverse multiply : hint
-  for ((multiply c b) = identity).
+Complete c_times_b_is_e left_inverse left_identity associativity : b c identity inverse multiply : hint
+  for ((multiply b c) = identity).
 
 (* Goal *)
-Theorem check : (multiply c b) = identity.
+Theorem check : (multiply b c) = identity.
 Proof.
   lpo_autorewrite with hint.
   reflexivity.

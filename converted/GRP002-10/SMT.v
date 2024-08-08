@@ -10,6 +10,8 @@ Variable inverse : Z -> Z.
 Variable multiply : Z -> Z -> Z.
 Variable product : Z -> Z -> Z -> Z.
 Variable true : Z.
+Axiom x_cubed_is_identity_2 : forall X Y : Z, (ifeq (product X X Y) true (product Y X identity) true) = true.
+Axiom x_cubed_is_identity_1 : forall X Y : Z, (ifeq (product X X Y) true (product X Y identity) true) = true.
 Axiom associativity2 : forall U V W X Y Z : Z, (ifeq (product Y Z V) true (ifeq (product X V W) true (ifeq (product X Y U) true (product U Z W) true) true) true) = true.
 Axiom associativity1 : forall U V W X Y Z : Z, (ifeq (product U Z W) true (ifeq (product Y Z V) true (ifeq (product X Y U) true (product X V W) true) true) true) = true.
 Axiom total_function2 : forall W X Y Z : Z, (ifeq2 (product X Y W) true (ifeq2 (product X Y Z) true Z W) W) = W.
@@ -21,10 +23,10 @@ Axiom left_identity : forall X : Z, (product identity X X) = true.
 Axiom ifeq_axiom_001 : forall A B C : Z, (ifeq A A B C) = B.
 Axiom ifeq_axiom : forall A B C : Z, (ifeq2 A A B C) = B.
 
-Add_lemmas associativity2 associativity1 total_function2 total_function1 right_inverse left_inverse right_identity left_identity ifeq_axiom_001 ifeq_axiom.
+Add_lemmas x_cubed_is_identity_2 x_cubed_is_identity_1 associativity2 associativity1 total_function2 total_function1 right_inverse left_inverse right_identity left_identity ifeq_axiom_001 ifeq_axiom.
 
 (* Goal *)
-Theorem check : forall X Y : Z, (ifeq (product X X Y) true (product X Y identity) true) = true.
+Theorem check : (product a b c) = true.
 Proof.
   smt.
 Qed.

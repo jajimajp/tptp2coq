@@ -4,16 +4,20 @@ From Hammer Require Import Hammer.
 
 (* axioms *)
 Parameter G : Set.
+Parameter b : G.
+Parameter c : G.
+Parameter d : G.
 Parameter identity : G.
 Parameter inverse : G -> G.
 Parameter multiply : G -> G -> G.
+Axiom product_equality : (multiply b c) = (multiply d c).
 Axiom left_inverse : forall X : G, (multiply (inverse X) X) = identity.
 Axiom left_identity : forall X : G, (multiply identity X) = X.
 Axiom associativity : forall X Y Z : G, (multiply (multiply X Y) Z) = (multiply X (multiply Y Z)).
 
 
 (* Goal *)
-Theorem check : (multiply b c) = (multiply d c).
+Theorem check : b = d.
 Proof.
   hammer.
 Qed.

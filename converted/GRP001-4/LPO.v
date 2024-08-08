@@ -4,16 +4,21 @@ From Completion Require Import Plugin.
 
 (* axioms *)
 Parameter G : Set.
+Parameter a : G.
+Parameter b : G.
+Parameter c : G.
 Parameter identity : G.
 Parameter multiply : G -> G -> G.
+Axiom a_times_b_is_c : (multiply a b) = c.
+Axiom squareness : forall X : G, (multiply X X) = identity.
 Axiom left_identity : forall X : G, (multiply identity X) = X.
 Axiom associativity : forall X Y Z : G, (multiply (multiply X Y) Z) = (multiply X (multiply Y Z)).
 
-Complete left_identity associativity : identity multiply : hint
-  for (forall X : G, (multiply X X) = identity).
+Complete a_times_b_is_c squareness left_identity associativity : a b c identity multiply : hint
+  for ((multiply b a) = c).
 
 (* Goal *)
-Theorem check : forall X : G, (multiply X X) = identity.
+Theorem check : (multiply b a) = c.
 Proof.
   lpo_autorewrite with hint.
   reflexivity.
