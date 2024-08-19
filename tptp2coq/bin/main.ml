@@ -158,15 +158,17 @@ let parse t =
   let axioms = axioms t in
   let compare_pair (i1, _) (i2, _) = compare i1 i2 in
   let constants =
-    List.concat (List.map (fun af ->
-      match af.af_formula with
+    List.concat (List.map (fun formula ->
+      match formula with
       | Clause lits ->
-        List.concat (List.map (fun lit ->
+        List.concat (List.filter_map (fun lit ->
           match lit with
-          | Lit (Pos, a) -> identifiers_with_rank_in_atom a
-          | _ -> failwith "parse: not implemented"
+          | Lit (Pos, a) -> Some (identifiers_with_rank_in_atom a)
+          | _ ->
+            Printf.eprintf "Encountered not implemented literal. Some constants may be ignored.";
+            None
         ) lits)
-    ) axioms)
+    ) (List.filter_map (function Cnf_anno af -> Some (af.af_formula) | _ -> None) t))
     |> List.filter (fun (i, _) -> is_constant i)
     |> List.sort_uniq compare_pair
   in
