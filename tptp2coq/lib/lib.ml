@@ -204,6 +204,13 @@ let rec string_of_atom = function
   | Equals (t1, t2) -> string_of_term t1 ^ " = " ^ string_of_term t2
   | _ -> failwith "string_of_atom: not implemented"
 
+
+(** [string_of_atom_s atom] returns string expression for SMTCoq.
+    This uses "=?" as equal. *)
+and string_of_atom_s = function
+  | Equals (t1, t2) -> string_of_term t1 ^ " =? " ^ string_of_term t2
+  | _ -> failwith "string_of_atom: not implemented"
+
 and string_of_term = function
   | Var v -> Tptp_printer.show_var v
   | Func (f, args) -> (
@@ -257,6 +264,43 @@ let print_axioms_in_p p =
           print_formula p lit;
           print_endline ".")
     p.axioms
+
+(** [string_of_formula_s f] returns string expression of formula [f].
+    _s for "SMTCoq version". This uses "Z" as the set. *)
+let string_of_formula_s f =
+  let vars =
+    match f with
+    | Lit (_, a) ->
+        identifiers_in_atom a |> List.sort_uniq compare
+        |> List.filter (fun i -> not (is_constant i))
+  in
+  (if List.length vars = 0 then ""
+   else "forall " ^ String.concat " " vars ^ " : Z, ")
+  ^ string_of_atom_s (match f with Lit (_, a) -> a)
+
+(** [print_axioms_in_p_s p] prints axioms.
+    This is "SMTCoq version", this prints "Z" as the set. *)
+let print_axioms_in_p_s p =
+  let print_formula_s problem f = (** _s for "SMTCoq version". *)
+    let vars = match f with
+    | Lit (_, a) ->
+      identifiers_in_atom a |> List.sort_uniq compare
+      |> List.filter (fun i -> not (is_constant i)) in
+    if List.length vars = 0 then ()
+    else print_string ("forall " ^ String.concat " " vars ^ " : Z, ");
+    print_string @@ string_of_atom_s (match f with Lit (_, a) -> a) in
+
+  let print_axiom axiom = match axiom.af_formula with (** Prints single axiom. *)
+  | Clause lits ->
+    let name = match axiom.af_name with
+    | N_word s -> Tptp_printer.show_plain_word s
+    | _ -> failwith "print_axioms_in_p_s: not implemented" in
+    let lit = List.hd lits in (* Only accepts one clause. *)
+    print_string ("Axiom ax_" ^ name ^ " : "); (* Differenciate axioms from constants. *)
+    print_formula_s p lit;
+    print_endline "." in
+
+  List.iter print_axiom p.axioms
 
 let rec gen_coq_p_with_completion p use_lpo use_hammer use_smt =
   if use_hammer then gen_coq_p_with_completion_ham p
@@ -373,10 +417,10 @@ and gen_coq_p_with_smt p =
     (fun (name, num_of_args) ->
       print_endline
         ("Variable " ^ name ^ " : "
-        ^ String.concat " -> " (List.init (num_of_args + 1) (fun _ -> "G"))
+        ^ String.concat " -> " (List.init (num_of_args + 1) (fun _ -> "Z"))
         ^ "."))
     p.constants;
-  print_axioms_in_p p;
+  print_axioms_in_p_s p;
   print_endline "";
   let axiom_names =
     List.map
@@ -391,12 +435,11 @@ and gen_coq_p_with_smt p =
   let problem_lit = match p.problem with Clause lits -> List.hd lits in
   print_endline "";
   let goal_name = "check" in
-  (* TODO *)
   print_endline
     (String.concat "\n"
        [
          "(* Goal *)";
-         "Theorem " ^ goal_name ^ " : " ^ string_of_formula p problem_lit ^ ".";
+         "Theorem " ^ goal_name ^ " : " ^ string_of_formula_s problem_lit ^ ".";
          "Proof.";
          "  smt.";
          "Qed.";

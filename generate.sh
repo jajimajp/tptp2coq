@@ -12,6 +12,3 @@ fi
 
 # Remove empty files
 ./remove_empties.sh ./converted
-
-# Convert SMT.v files
-./smtconv.sh
