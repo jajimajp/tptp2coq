@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/tptp2coqp/META"
-  "_build/install/default/lib/tptp2coqp/dune-package"
-  "_build/install/default/lib/tptp2coqp/opam"
-]
-bin: [
-  "_build/install/default/bin/tptp2coqp"
-]

@@ -1,2 +1,4 @@
 (library
- (name tptp2coqp))
+ (name tptp2coqp)
+ (libraries tptp)
+ (flags -w -11))
