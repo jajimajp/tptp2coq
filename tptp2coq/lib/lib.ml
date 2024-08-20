@@ -158,7 +158,8 @@ let find_problem inputs =
             | R_theorem ->
                 aux t
             | R_negated_conjecture ->
-                if is_equality h then aux t else af.af_formula)
+                if is_equality h then aux t else af.af_formula
+            | _ -> aux t)
         | _ -> aux t)
   in
   aux inputs
@@ -216,6 +217,7 @@ and string_of_term = function
       | _ ->
           "(" ^ f ^ " " ^ String.concat " " (List.map string_of_term args) ^ ")"
       )
+  | _ -> failwith "string_of_term: not implemented"
 
 let string_of_formula problem f =
   let vars =
@@ -245,17 +247,6 @@ let print_axioms_in_p p =
     (fun af ->
       match af.af_formula with
       | Clause lits ->
-          let vars =
-            List.concat
-              (List.map
-                 (fun lit ->
-                   match lit with
-                   | Lit (Pos, a) ->
-                       identifiers_in_atom a |> List.sort_uniq compare
-                       |> List.filter (fun i -> not (is_constant i))
-                   | _ -> failwith "print_axioms_in_p: not implemented")
-                 lits)
-          in
           let name =
             match af.af_name with
             | N_word s -> Tptp_printer.show_plain_word s
@@ -350,16 +341,6 @@ and gen_coq_p_with_completion_ham p =
     p.constants;
   print_axioms_in_p p;
   print_endline "";
-  let axiom_names =
-    List.map
-      (fun af ->
-        match af.af_name with
-        | N_word s -> Tptp_printer.show_plain_word s
-        | _ -> failwith "gen_coq_p_with_completion: not implemented")
-      p.axioms
-  in
-  let axiom_names = List.map (fun n -> "ax_" ^ n) axiom_names in
-  let constants = List.map (fun (name, _) -> name) p.constants in
   let problem_lit = match p.problem with Clause lits -> List.hd lits in
   print_endline "";
   let goal_name = "check" in
@@ -406,7 +387,6 @@ and gen_coq_p_with_smt p =
       p.axioms
   in
   let axiom_names = List.map (fun n -> "ax_" ^ n) axiom_names in
-  let constants = List.map (fun (name, _) -> name) p.constants in
   print_endline ("Add_lemmas " ^ String.concat " " axiom_names ^ ".");
   let problem_lit = match p.problem with Clause lits -> List.hd lits in
   print_endline "";
