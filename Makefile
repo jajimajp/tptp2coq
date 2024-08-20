@@ -7,3 +7,11 @@ conv:
 .PHONY: clean
 clean:
 	$(RM) -r ./converted
+
+# Port to tptp2coqp
+.PHONY: build install
+build:
+	$(MAKE) --directory=tptp2coq all
+
+install:
+	$(MAKE) --directory=tptp2coq install
