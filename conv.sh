@@ -23,6 +23,7 @@ convert_files() {
                 tptp2coqp "$FILE" h > "$CONVERT_DIR/Hammer.v"
                 tptp2coqp "$FILE" l > "$CONVERT_DIR/LPO.v"
                 tptp2coqp "$FILE" s > "$CONVERT_DIR/SMT.v"
+                tptp2coqp "$FILE" t > "$CONVERT_DIR/Twee.v"
             fi
         fi
     done
